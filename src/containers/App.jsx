@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
+import TopBar from 'Components/TopBar';
+import Projects from './Projects';
+import GlobalStyle from '../createGlobalStyle';
 
 class App extends Component {
   constructor() {
@@ -13,7 +16,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>Coming Soon!</h1>
+        <GlobalStyle />
+        {/* <TopBar /> */}
+        <Projects />
       </div>
     );
   };
